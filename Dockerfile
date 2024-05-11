@@ -4,4 +4,3 @@ ARG DEBIAN_FRONTEND=noninteractive
 RUN sed -i 's/http:\/\/archive.ubuntu.com\//http:\/\/us.archive.ubuntu.com\//g' /etc/apt/sources.list
 ADD . /var/www/html/
 EXPOSE 80
-ENTRYPOINT apachectl -D FOREGROUND
